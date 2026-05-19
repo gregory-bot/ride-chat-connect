@@ -10,4 +10,4 @@ africastalking==1.2.9
 python-dotenv==1.0.1
 greenlet==3.0.3
 pydantic==2.10.0
-pydantic-core==2.27.0
+pydantic-core==2.20.0
