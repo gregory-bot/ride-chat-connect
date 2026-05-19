@@ -8,6 +8,5 @@ python-multipart==0.0.18
 twilio==9.4.0
 africastalking==1.2.9
 python-dotenv==1.0.1
-greenlet==3.1.1
-pydantic==2.10.5
-pydantic-core==2.27.2
+greenlet>=3.1.1
+pydantic-core>=2.27.2
