@@ -1,8 +1,8 @@
-# WaziRide
+# Annex Mobility
 
 **WhatsApp and SMS Ride-Booking Infrastructure for Africa**
 
-WaziRide is a production-grade Python backend that enables ride booking entirely over WhatsApp and SMS — no mobile app required. It is designed for markets where app abandonment, limited device storage, and high data costs create a structural barrier between users and ride-hailing services.
+Annex Mobility is a solution that enables ride booking entirely over WhatsApp and SMS. It is designed for markets where app abandonment, limited device storage, and high data costs create a structural barrier between users and ride-hailing services.
 
 ---
 
@@ -20,18 +20,18 @@ The digital ride economy was built for users with flagship smartphones and affor
 
 ## The Solution
 
-WaziRide moves the booking interface to where the users already are: WhatsApp and SMS.
+Annex Mobility moves the booking interface to where the users already are: WhatsApp and SMS.
 
 A user sends a message to a WaziRide number. The system handles pickup location (shared pin or typed address), destination, fare estimation, driver matching, trip updates, and payment confirmation — all through a structured conversation. No app. No install. No account setup beyond a phone number.
 
-This is not a consumer product. WaziRide is an infrastructure layer — a WhatsApp and SMS channel that any ride-hailing operator (Uber, Bolt, Little Cab, or an independent fleet) can connect to their existing dispatch API.
+This is not a consumer product. Annex Mobility is an infrastructure layer — a WhatsApp and SMS channel that any ride-hailing operator (Uber, Bolt, Little Cab, or an independent fleet) can connect to their existing dispatch API.
 
 ---
 
 ## Conversation Flow
 
 ```
-User:  hi                   ->  "Welcome to WaziRide. Where should we pick you up?"
+User:  hi                   ->  "Welcome to Annex Mobility. Where should we pick you up?"
 User:  Westlands, Nairobi   ->  "Pickup confirmed. Where are you going?"
 User:  JKIA, Nairobi        ->  "From Westlands to JKIA. Approx. 14 km, 30 min. Fare: KES 1,250. Reply YES to confirm or NO to cancel."
 User:  YES                  ->  "Trip confirmed. Driver: John M. — KDB 123X, Toyota Axio White. Rating: 4.9. Arriving in approx. 4 minutes."
@@ -57,7 +57,7 @@ User Device (WhatsApp / SMS)
 WhatsApp Business API (Meta) or Africa's Talking / Twilio SMS
         |
         v
-WaziRide Backend (FastAPI)
+Annex Mobility Backend (FastAPI)
   - Conversation state machine
   - Geocoding (Google Maps API or deterministic offline mock)
   - Fare estimation (haversine distance + pricing formula)
